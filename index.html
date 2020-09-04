@@ -32,37 +32,40 @@
         </div>
 
         <div id="weather-container">
-            <div id="city">
-                <div class="city-header"><h1 id="city-header"></h1><h2 id= "country"></h2></div>
-                <div id="date"></div>
-                <div id="feels-temperature"></div>
-                <div class="weather-icons"><img id="weather-icons"></div>
-                <div id="wind"></div>
-                <div id="humidity"></div>
-                <div id="pressure"></div>
-            </div>
+            <div class="row">
+                <div class="column">
+                    <div id="city">
+                        <div class="city-header"><h1 id="city-header"></h1><h2 id= "country"></h2></div>
+                        <div id="date"></div>
+                        <div id="feels-temperature"></div>
+                        <div class="weather-icons"><img id="weather-icons"></div>
+                        <div id="wind"></div>
+                        <div id="humidity"></div>
+                        <div id="pressure"></div>
+                    </div>
+                
+                    <div id="days-weather">
+                        <div id="day1">
+                        </div>
+                        <div id="day2">
+                        </div>
+                        <div id="day3">
+                        </div>
+                    </div>
+                </div>
+           
 
-            <div class="map-container">
-                <div id="map"></div>
-                <div id="coord">
-                    <div id="long"></div>
-                    <div id="lat"></div>
+                <div class="column">
+                    <div class="map-container">
+                        <div id="map"></div>
+                        <div id="coord">
+                            <div id="long"></div>
+                            <div id="lat"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            
-            <div id="days-weather">
-                <div id="day1">
-                </div>
-                <div id="day2">
-                </div>
-                <div id="day3">
-                </div>
-            </div>
-
         </div>
-
-    </div>
 
     <script src="js/main.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3A8f7ow0V6nR5ZYmUstnHyS0V1MQvloQ&callback=initMap"
