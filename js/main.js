@@ -19,7 +19,7 @@ function getSearchMethod(searchTerm) {
 
 function searchWeatherByCityName(searchTerm) {
     getSearchMethod(searchTerm);
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?${searchMethod}=${searchTerm}&APPID=${appId}&units=${units}`).then(result => {
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?${searchMethod}=${searchTerm}&APPID=${appId}&units=${units}`).then(result => {
         return result.json();
     }).then(result => {
         init(result);
@@ -27,7 +27,7 @@ function searchWeatherByCityName(searchTerm) {
 }
 
 function searchWeatherByCoords() {
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longtitude}&APPID=${appId}&units=${units}`).then(result => {
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longtitude}&APPID=${appId}&units=${units}`).then(result => {
         return result.json();
     }).then(result => {
         init(result);
@@ -79,7 +79,7 @@ function initUserWeatherView(resultFromServer) {
 
     changeLanguage.onchange = () => onSelectChange(changeLanguage, resultFromServer);
 
-    weatherIcons.src = 'http://openweathermap.org/img/wn/' + resultFromServer.list[0].weather[0].icon + '.png';
+    weatherIcons.src = 'https://openweathermap.org/img/wn/' + resultFromServer.list[0].weather[0].icon + '.png';
     temperature.innerHTML = Math.floor(resultFromServer.list[0].main.temp) + '&#176' + 'C';
     cityHeader.innerHTML = resultFromServer.city.name + ', ';
     country.innerHTML = resultFromServer.city.country;
@@ -151,7 +151,7 @@ function createParagraphWithText(text) {
 
 function createImgWithSrc(icon) {
     let img = document.createElement('img');
-    img.src = 'http://openweathermap.org/img/wn/' + icon + '.png';
+    img.src = 'https://openweathermap.org/img/wn/' + icon + '.png';
     return img;
 }
 
