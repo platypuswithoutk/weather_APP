@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.main-container {
+    width: 100vw;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-color: honeydew;
+    text-shadow: 2px 2px 1px white;
+}
+
+#refresh i {
+    color: black;
+    cursor: pointer;
+}
+
+.search-container, .changing-panel {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button, select {
+    border: 2px solid black;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10%;
+    font-weight: bold;
+}
+
+#refresh {
+    margin: 20px 5px;
+}
+
+select {
+    background-color: rgb(226, 226, 226);
+    padding: 15px;
+    margin: 20px 10px;
+}
+
+#farancheit, #celcius {
+    margin: 20px 1px;
+}
+
+.searchControl {
+    margin-top: 20px;
+}
+
+#searchInput {
+    padding: 10px;
+    font-size: 15px;
+}
+
+#searchBtn {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: -4px;
+    border-radius: 0;
+    padding: 11px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: darkkhaki;
+    font-weight: bold
+}
+
+#weather-container {
+    margin: 50px 80px 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#feels-temperature {
+    font-size: 80px;
+}
+
+h2, h1 {
+    font-size: 80px;
+    display: inline;
+}
+
+#city, .map-container {
+    flex-basis: 48%;
+    text-align: center;
+}
+
+#date {
+    font-size: 30px;
+}
+
+#feels-temperature, .weather-icons {
+    padding-top: 20px;
+    text-align: center;
+    display: inline;
+}
+
+#feels-temperature {
+    margin-left: 50px;
+}
+
+#wind, #humidity, #pressure {
+    font-size: 25px;
+}
+
+#map {
+    width: 80%;
+    height: 300px;
+}
+
+#map-container {
+    display: flex;
+}
+
+img {
+    width: 100px;
+}
+
+#long, #lat {
+    font-size: 20px;
+    color: black;
+    text-shadow: 2px 2px 1px gray;
+}
+
+#long {
+    padding-top: 30px;
+}
+
+#days-weather {
+    display: flex;
+    padding: 50px;
+}
+
+#days-weather p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#day1, #day2, #day3 {
+    margin: 0 20px;
+    border: 1px solid black;
+    background-color: hsla(43, 39%, 100%, 0.3);
+    border-radius: 5%;
+    padding: 30px;
+}

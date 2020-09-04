@@ -1,0 +1,84 @@
+@media only screen and (max-width: 1024px) {
+
+    #weather-container {
+        margin: 50px 20px 0 80px;
+    }
+
+    h1, h2 {
+        font-size: 60px;
+    }
+
+    #map {
+        width: 90%;
+        height: 280px;
+    }
+
+    #date {
+        font-size: 25px;
+    }
+
+    #feels-temperature {
+        font-size: 69px;
+    }
+
+    #wind, #humidity, #pressure {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #city, .map-container {
+        flex-basis: 100%;
+    }
+    #city {
+        padding-bottom: 20px;
+    }
+    #days-weather {
+        padding: 0px;
+        padding-top: 20px;
+    }
+
+    #day1, #day2, #day3 {
+        margin: 0 5px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 584px) {
+    #day1, #day2, #day3 {
+        margin: 0 5px;
+        padding: 0px;
+    }
+}
+
+
+
+@media only screen and (max-width: 425px) {
+    #weather-container {
+        margin: 0; 
+    }
+
+    #day1, #day2, #day3 {
+        margin:4px;
+        padding:0px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h1, h2 {
+        font-size: 40px;
+    }
+
+    #map {
+        height: 200px;
+    }
+
+    #days-weather img {
+        width: 80%;
+    }
+
+    #days-weather p {
+        font-size: 15px;
+    }
+}
