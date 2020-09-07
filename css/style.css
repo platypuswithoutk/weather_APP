@@ -5,10 +5,22 @@
 
 .main-container {
     background-size: cover;
-    
     background-position: center;
     background-color: honeydew;
-    text-shadow: 2px 2px 1px white;
+}
+
+#city, #coord{
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 10px;
+}
+
+#coord {
+    width: 50%;
+    margin-top: 20px;
 }
 
 #refresh i {
@@ -68,7 +80,7 @@ button:hover {
 }
 
 #weather-container {
-    margin: 35px 80px 0 80px;
+    margin: 20px 80px 0 80px;
 }
 
 #feels-temperature {
@@ -117,6 +129,7 @@ h2, h1 {
 #map {
     width: 90%;
     height: 350px;
+    border: 3px solid black;
 }
 
 #map-container {
@@ -129,12 +142,7 @@ img {
 
 #long, #lat {
     font-size: 22px;
-    color: black;
-    text-shadow: 2px 2px 1px gray;
-}
-
-#long {
-    padding-top: 30px;
+    color: white;
 }
 
 #days-weather {
