@@ -58,6 +58,10 @@
         margin: 0; 
     }
 
+    h1, h2 {
+        font-size: 58px;
+    }
+
     .column {
         width: 94%;
     }
@@ -74,6 +78,10 @@
 
     #long, #lat {
         font-size: 20px;
+    }
+
+    #coord {
+        width:70%;
     }
 }
 
@@ -116,9 +124,5 @@
     #feels-temperature {
         margin-left: 20px;
         font-size: 66px;
-    }
-
-    #coord {
-        width:70%;
     }
 }
