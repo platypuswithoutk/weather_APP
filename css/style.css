@@ -4,9 +4,8 @@
 }
 
 .main-container {
-    width: 100vw;
-    height: auto;
     background-size: cover;
+    
     background-position: center;
     background-color: honeydew;
     text-shadow: 2px 2px 1px white;
