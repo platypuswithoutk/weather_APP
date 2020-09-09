@@ -89,7 +89,7 @@
 
 @media only screen and (max-width: 352px) {
     h1, h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     #map {
